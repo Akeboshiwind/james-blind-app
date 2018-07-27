@@ -1,0 +1,45 @@
+html {
+    background-color: lightgrey;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.analyzebutton,
+.inputfile + label {
+    width: 400px;
+    height: 200px;
+    font-size: 4.5em;
+    font-weight: 700;
+    color: rgb(246, 247, 226);
+    background-color: rgb(233, 76, 76);
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.analyzebutton:focus,
+.inputfile:focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.analyzebutton:hover,
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: rgb(202, 62, 62);
+}
+
+.inputfile + label * {
+    pointer-events: none;
+}
+
+#preview {
+    height: 500px;
+}
